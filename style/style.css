@@ -1,0 +1,218 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Empêche le défilement naturel */
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    font-family: 'Arial', sans-serif; /* Ou une autre police de votre choix */
+     /* Couleur de fond générale */
+}
+
+.section {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    opacity: 0; /* Initialement masqué */
+    visibility: hidden;
+}
+
+#accueil {
+    opacity: 1; /* Visible initialement */
+    visibility: visible;
+    background-color: transparent;
+   
+}
+
+#accueil h1{
+    z-index: 3;
+    font-family: "UnifrakturMaguntia";
+    color: #fff;
+    font-size: 8rem;
+    text-shadow: black 1px 1px 20px;
+    -webkit-text-stroke: #8a8a8a 0.5px ;
+}
+
+#accueil #commencerAventure {
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    border: solid #fff 0.1rem;
+    box-shadow: #fff 1px 1px 20px;
+    transition: border 0.5s ease;
+    transition: box-shadow 0.5s ease;
+    text-shadow: black 1px 1px 20px;
+}
+#accueil #commencerAventure:hover{
+    box-shadow: #c79b0c 1px 1px 20px;
+    border:solid #c79b0c 0.1rem ;
+}
+#background-video {
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    }
+
+#enigme1, #enigme2, #enigme3,#enigme4,#enigme5,#enigme6,#enigme7{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#enigme1 {
+  background-image: url(img/bg2.png);
+  align-items: baseline;
+}
+.content1{
+    padding: 1rem;
+    width: 40vw;
+    flex-wrap: wrap;
+}
+.content2{
+    padding: 2rem;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff0b;
+    backdrop-filter: blur(8px);
+    flex-wrap: wrap;
+    color: #ffffff;
+}
+.content2 h2{
+    color: #fff;
+}
+.content2 p {
+    color: #ffffff;
+}
+h3{
+    position: relative;
+}
+#cache{
+    width: 5rem;
+    height: 3rem;
+    position: absolute;
+       opacity: 0;
+    font-size: 3rem;
+    transition: opacity 3s 1s ease;
+    color: #000000;
+    text-shadow: #ffffff 1px 1px 5px;
+    cursor: alias;
+    z-index: 1000;
+}
+.boxsecrete1{
+    top:50%;
+    right: 18%;
+}
+.boxsecrete2{
+    top:10%;
+    right: 80%;
+}
+.boxsecrete3{
+    top:80%;
+    right: 2%;
+}
+.boxsecrete4{
+    top:20%;
+    right: 80%;
+}
+.boxsecrete5{
+    top:80%;
+    right: 27%;
+}
+.boxsecrete6{
+    top:50%;
+    right: 25%;
+}
+.boxsecrete7{
+    top:80%;
+    left: 80%;
+}
+
+#cache:hover{
+    opacity: 1;
+}
+#enigme2 {
+    background-image: url(img/bg3.png);
+  align-items: baseline;
+}
+
+#enigme3{
+    background-image: url(img/bg4.png);
+    align-items: baseline;
+}
+#enigme4{
+    background-image: url(img/bg5.png);
+    align-items: baseline;
+}
+#enigme5{
+    background-image: url(img/bg6.png);
+    align-items: baseline;
+}
+#enigme6{
+    background-image: url(img/bg7.png);
+    align-items: baseline;
+}
+#enigme7{
+    background-image: url(img/bg8.png);
+    align-items: baseline;
+}
+#fin{
+    background-image: url(img/bg9.png);
+    align-items: center;
+}
+h1, h2 {
+    margin: 0;
+    padding: 20px;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+input[type="text"] {
+    border: 2px solid #ffffff;
+    background: transparent;
+    padding: 10px;
+    font-size: 1em;
+    margin-top: 10px;
+    transition: box-shadow 0.5s ease;
+    transition: backdrop-filter 0.5s ease;
+}
+input[type="text"]:focus{
+    border: none;
+box-shadow: #fff 1px 1px 10px;
+backdrop-filter: blur(10px);
+}
+button {
+    background-color: #8b4513; /* Couleur bois foncé */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #5a3410; /* Couleur bois plus foncé au survol */
+}
+
+#feedback1, #feedback2 {
+    margin-top: 15px;
+    font-style: italic;
+    color: #c0392b; /* Couleur pour les feedbacks */
+}

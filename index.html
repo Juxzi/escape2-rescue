@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+    <title>Escape Game</title>
+</head>
+<body>
+    <!-- Page d'accueil -->
+<div class="section" id="accueil">
+    <video id="background-video" autoplay loop muted>
+
+        <source src="style/img/test.mp4" type="video/mp4">
+        
+        </video>
+        <div class="content">
+    <h1>Bienvenue à l'Évasion Pirate</h1>
+    <button id="commencerAventure">Commencer l'Aventure</button></div>
+</div>
+
+<!-- Énigme 1 -->
+<div class="section" id="enigme1">
+    <div class="boxsecrete1" id="cache"><h3>R</h3></div>
+    <div class="content1">
+    <h2>Le Code Secret du Capitaine</h2>
+    <p>"Arrr, matelot ! Décrypte ce message pour trouver le mot de passe : '<span id="codeSecret">F10E4M5Z1O5C2</span>'"</p>
+    <input type="text" id="reponseEnigme1" placeholder="Le mot de passe">
+    <button id="verifierReponse1">Déverrouiller le coffre</button>
+    <p id="feedback1"></p></div>
+</div>
+
+<!-- Énigme 2 -->
+<div class="section" id="enigme2">
+    <div class="boxsecrete2" id="cache"><h3>6</h3></div>
+    <div class="content1">
+    <h2>Le Compas Maudit du Capitaine</h2>
+    <p>"Le compas du capitaine indique quatre directions : Nord, Est, Sud, Ouest. Mais chaque direction est liée à un chiffre mystérieux : 6, 3, 7, -1. Quelle séquence de directions ouvre le coffre?"</p>
+    <input type="text" id="reponseEnigme2" placeholder="Séquence (ex: N-E-S-O)">
+    <button id="verifierReponse2">Ouvrir le coffre</button>
+    <p id="feedback2"></p></div>
+</div>
+
+    
+<div class="section" id="enigme3">
+    <div class="boxsecrete3" id="cache"><h3>X</h3></div>
+    <div class="content1">
+    <h2>La Carte Mystérieuse du Vieux Pirate</h2>
+    <p>Sur cette carte, trois îles sont marquées : Île du tombeau vierge, Île du Crâne, Île du diable. Les instructions disent : 'Quand on la voit, la vie s'arrête ,mais le corps y reste. "Quelle île choisissez-vous?"</p>
+    <input type="text" id="reponseEnigme3" placeholder="Nom de l'île">
+    <button id="verifierReponse3">Chercher le Trésor</button>
+    <p id="feedback3"></p></div>
+</div>
+
+<div class="section" id="enigme4">
+    <div class="boxsecrete4" id="cache"><h3>V</h3></div>
+    <div class="content1">
+    <h2>Le Code Secret des Nombres du Capitaine</h2>
+    <p>"Le vieux capitaine a laissé une série de nombres comme indice pour le trésor : 2, 3, 5, 7, 11, ?. Quel est le prochain nombre de cette série?"</p>
+    <input type="text" id="reponseEnigme4" placeholder="Entrez le prochain nombre">
+    <button id="verifierReponse4">Déchiffrer</button>
+    <p id="feedback4"></p></div>
+</div>
+<div class="section" id="enigme5">
+    <div class="boxsecrete5" id="cache"><h3>G</h3></div>
+    <div class="content1">
+    <h2>L'Énigme du Pirate Légendaire</h2>
+    <p>"Je fus le terreur des mers, craint par beaucoup, admiré par certains. Mon règne a été court, mais ma légende perdure. J'ai navigué, semant peur et mystère. Je suis disparu comme une ombre, laissant derrière moi un nom qui évoque à la fois crainte et fascination. Qui suis-je ?"</p>
+    <input type="text" id="reponseEnigme5" placeholder="Entrez le nom du pirate">
+    <button id="verifierReponse5">Révéler l'Identité</button>
+    <p id="feedback5"></p></div>
+</div>
+
+    <!-- Énigme 6 -->
+<div class="section" id="enigme6">
+    <div class="boxsecrete6" id="cache"><h3>Z</h3></div>
+    <div class="content1">
+    <h2>La Quête du Trésor de l'Île de la Promesse Brisée</h2>
+    <p>"Hugo, le pirate rusé, célèbre son ultime aventure en célibataire. Ses fidèles compagnons lui ont concocté une quête énigmatique, menant à un trésor caché sur l'île de la Promesse Brisée. L'énigme dit : 'Dans les profondeurs de l'île, sous le regard d'un roi sans couronne, tu trouveras cinq pierres dressées en cercle. Au centre, une énigme attend. Tourne-toi vers le son du futur, fais trois pas, et là tu creuseras. Le trésor n'est ni d'or, ni de pierres précieuses, mais plus précieux que tous les joyaux des sept mers.' Hugo doit déchiffrer l'énigme pour trouver son trésor. Quel est ce trésor tant recherché ?"</p>
+    <input type="text" id="reponseEnigme6" placeholder="Nom du trésor">
+    <button id="verifierReponse6">Dévoiler le Trésor</button>
+    <p id="feedback6"></p></div>
+</div>
+<div class="section" id="enigme7">
+    <div class="boxsecrete7" id="cache"><h3>U</h3></div>
+    <div class="content2">
+        <h2>J'espere que tu as été attentif</h2>
+        <p>"Depuis le début j'ai caché des elements sur chaque page, j'espere que tu as bien tout noté.. si non recommence.."</p>
+        <input type="text" id="reponseEnigme7" placeholder="code">
+        <button id="verifierReponse7">Dévoiler le Trésor</button>
+        <p id="feedback7"></p></div>
+
+</div>
+<div class="section" id="fin">
+
+</div>
+<!-- Ajoutez ici d'autres énigmes si nécessaire -->
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollToPlugin.min.js"></script>
+    <script src="script/script.js"></script>
+</body>
+</html>
